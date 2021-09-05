@@ -11,7 +11,7 @@ spring:
     username: root
     password: 1234
   redis:
-    url: redis://:zC3RBkpdWR@redis.share:6379
+    url: redis://:zC3RBkpdWR@redis-headless.share:6379
     lettuce:
       pool:
         min-idle: 4
