@@ -39,7 +39,7 @@ public class PtUserServiceImpl implements PtUserService {
         if (count < 1) {
             return r.setList(new ArrayList<>(0));
         }
-        int totalPage = count / pageSize + count % pageSize == 0 ? 0 : 1;
+        int totalPage = (int) (count / pageSize + (count % pageSize == 0 ? 0 : 1));
         int pn = pageNum > totalPage ? totalPage : pageNum;
         r.setTotalPage(totalPage);
         r.setPageNum(pn);

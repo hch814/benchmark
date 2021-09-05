@@ -32,6 +32,6 @@ public class WebConfig implements WebMvcConfigurer {
                 long start = (long) request.getAttribute(START);
                 log.info("{} costs {}ms", request.getServletPath(), System.currentTimeMillis() - start);
             }
-        });
+        }).excludePathPatterns("/");
     }
 }
