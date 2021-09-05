@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JAR_NAME="springboot-bench.jar"
+JAR_NAME="${APP_NAME}.jar"
 VM_OPTIONS=""
 PROGRAM_ARGS=""
 #在$*中遍历参数，此时每个参数都是独立的，会遍历$#次
