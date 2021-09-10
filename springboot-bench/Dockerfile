@@ -1,7 +1,7 @@
 FROM registry.cn-shanghai.aliyuncs.com/kejun/java
-ARG APP_NAME=springboot-bench
+ARG APP_NAME="springboot-bench"
 ENV APP_NAME=${APP_NAME}
-WORKDIR /home/app
+WORKDIR /home/app/${APP_NAME}
 ADD target/${APP_NAME}.jar .
 ADD bin/entrypoint.sh .
 RUN chown app entrypoint.sh && chmod +x entrypoint.sh
