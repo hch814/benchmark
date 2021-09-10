@@ -1,4 +1,5 @@
-FROM registry.cn-shanghai.aliyuncs.com/kejun/java:210718
+FROM registry.cn-shanghai.aliyuncs.com/kejun/java
+USER app
 ARG APP_NAME=springboot-bench
 ENV APP_NAME=${APP_NAME}
 WORKDIR /home/app
