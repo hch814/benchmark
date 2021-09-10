@@ -6,4 +6,4 @@ ADD target/${APP_NAME}.jar .
 ADD bin/entrypoint.sh .
 RUN chown app entrypoint.sh && chmod +x entrypoint.sh
 USER app
-ENTRYPOINT ["/home/app/entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
