@@ -1,6 +1,6 @@
-server:
-  tomcat:
-    min-spare-threads: 8
+#server:
+#  tomcat:
+#    min-spare-threads: 8
 #    max-threads: 20
 #    accept-count: 1
 #    max-connections: 1
@@ -11,12 +11,13 @@ spring:
     username: root
     password: 1234
     hikari:
-      maximum-pool-size: 20
+      maximum-pool-size: 200
   redis:
     url: redis://:zC3RBkpdWR@redis-headless.share:6379
     lettuce:
       pool:
         min-idle: 4
+        max-active: 200
   cache:
     redis:
       time-to-live: 10m
