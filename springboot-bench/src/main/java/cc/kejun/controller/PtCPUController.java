@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Random;
 
 /**
+ * 模拟CPU密集型
+ *
  * @author hch
  * @since 2021/9/11
  */
