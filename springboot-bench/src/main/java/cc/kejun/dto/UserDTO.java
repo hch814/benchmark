@@ -3,6 +3,7 @@ package cc.kejun.dto;
 import cc.kejun.domain.PtUser;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
@@ -11,6 +12,7 @@ import java.io.Serializable;
  * @since 2021/7/17
  */
 @Data
+@NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDTO implements Serializable {
     private static final long serialVersionUID = -1248185897923805901L;
