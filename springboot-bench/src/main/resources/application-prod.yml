@@ -10,6 +10,8 @@ spring:
     url: jdbc:mysql://mysql.share:3306/benchmark?useSSL=false&characterEncoding=utf8
     username: root
     password: 1234
+    hikari:
+      maximum-pool-size:
   redis:
     url: redis://:zC3RBkpdWR@redis-headless.share:6379
     lettuce:
