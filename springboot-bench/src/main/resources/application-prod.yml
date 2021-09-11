@@ -1,6 +1,6 @@
-server:
-  tomcat:
-    max-threads: 20
+#server:
+#  tomcat:
+#    max-threads: 20
 #    min-spare-threads: 1
 #    accept-count: 1
 #    max-connections: 1
