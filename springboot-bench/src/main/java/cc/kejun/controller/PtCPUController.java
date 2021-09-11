@@ -11,11 +11,11 @@ import java.util.Random;
  */
 @RestController
 public class PtCPUController {
-    private static final Random RANDOM = new Random();
+    // private static final Random RANDOM = new Random();
     @GetMapping("/cpu")
     public void cpu() {
         for (int i = 0; i < 10000; i++) {
-            Math.log(RANDOM.nextDouble());
+            Math.log(123.45);
         }
     }
 }
