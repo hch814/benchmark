@@ -3,8 +3,8 @@
 JAR_NAME="${APP_NAME}.jar"
 mkdir jvm
 VM_OPTIONS="-javaagent:/skywalking/agent/skywalking-agent.jar
--Dagent.service_name=${APP_NAME}
--Dcollector.backend_service=skywalking-oap.share:11800
+-Dskywalking.agent.service_name=${APP_NAME}
+-Dskywalking.collector.backend_service=skywalking-oap.share:11800
 -XX:InitialRAMPercentage=75.0
 -XX:MinRAMPercentage=75.0
 -XX:MaxRAMPercentage=75.0
