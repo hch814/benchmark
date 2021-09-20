@@ -2,7 +2,11 @@
 
 JAR_NAME="${APP_NAME}.jar"
 mkdir jvm
-VM_OPTIONS="-XX:InitialRAMPercentage=75.0
+VM_OPTIONS="-javaagent:/home/elastic-apm-agent-1.26.0.jar
+-Delastic.apm.service_name=${APP_NAME}
+-Delastic.apm.server_urls=http://apm-server-amp-server.share:8200
+-Delastic.apm.application_packages=cc.kejun
+-XX:InitialRAMPercentage=75.0
 -XX:MinRAMPercentage=75.0
 -XX:MaxRAMPercentage=75.0
 -Xloggc:$(pwd)/jvm/gc.log
